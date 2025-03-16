@@ -90,7 +90,6 @@ def cleanup_old_files():
     except Exception as e:
         logger.error(f"Error during cleanup: {str(e)}")
 
-
 # Run cleanup every hour
 @app.before_request
 def before_request():
